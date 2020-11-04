@@ -356,14 +356,16 @@ nav {
 
 main {
   width: 100%;
+  height: 100%;
 }
 
 .container {
   width: 100%;
+  position: relative;
 }
 
 .banner {
-  position: absolute;
+  /* position: absolute; */
   background: linear-gradient(to bottom, #00000000, #e7e7e7),
     url(../images/pexels-mentatdgt-1426191.jpg);
   background-position: center;
@@ -374,19 +376,21 @@ main {
 }
 
 .products {
-  position: absolute;
+  /* position: absolute; */
   top: 70%;
-  /* transform: translateY(-40%); */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   padding: 1rem;
   background-color: #e4e4e4;
-  gap: 20px;
 }
 
 .products img {
   width: 100%;
   object-fit: contain;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .cards {
@@ -413,4 +417,72 @@ main {
 
 .card-body:hover span {
   color: #f7a439;
+}
+
+.carousel {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.carousel h4 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.carousel h4 a {
+  text-decoration: none;
+  color: #2b66ad;
+}
+
+.carousel .slider {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  margin: auto;
+}
+
+footer {
+  z-index: 1000;
+  position: relative;
+  background-color: #232f3e;
+}
+
+.footer_content {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  padding: 2rem 0;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer_content ul {
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.footer_content ul li {
+  display: block;
+  color: #fff;
+}
+
+.footer_content ul li span {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.footer_content a {
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  padding: 6px 0;
+  color: #f2f2f2;
+  margin: 1px 0;
+}
+
+.footer_content a:hover {
+  text-decoration: underline;
 }
